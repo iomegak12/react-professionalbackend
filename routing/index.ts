@@ -1,7 +1,9 @@
+import { AuthenticationRouting } from "./authentication-routing";
 import { CustomerRouting } from "./customer-routing";
-import { ICustomerRouting } from "./icustomer-routing";
+import { IRouting } from "./icustomer-routing";
 
 export {
-    ICustomerRouting,
-    CustomerRouting
+    IRouting,
+    CustomerRouting,
+    AuthenticationRouting
 };

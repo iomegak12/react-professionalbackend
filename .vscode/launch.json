@@ -7,16 +7,32 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Development Build",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\index.js",
-            "env": {
-                "MONGO_SERVER": "localhost",
-                "MONGO_PORT": "27017",
-                "MONGO_DB": "customersdb"
-            }
+            "program": "${workspaceFolder}\\server.js",
+            "envFile": "${workspaceFolder}/enviroments/development.env"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Staging Build",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\server.js",
+            "envFile": "${workspaceFolder}/enviroments/staging.env"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Production Build",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\server.js",
+            "envFile": "${workspaceFolder}/enviroments/production.env"
         }
     ]
 }
