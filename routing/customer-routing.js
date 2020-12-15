@@ -119,7 +119,7 @@ class CustomerRouting {
         this.router.post("/", (request, response) => __awaiter(this, void 0, void 0, function* () {
             var _a;
             const body = request.body;
-            const customerRecord = new models_1.Customer(body.customerId, body.customerName, body.add, body.email, body.phoneNumber, body.customerType, body.creditLimit, body.activeStatus, body.remarks);
+            const customerRecord = new models_1.Customer(body.customerId, body.customerName, body.address, body.email, body.phoneNumber, body.customerType, body.creditLimit, body.activeStatus, body.remarks);
             const validation = customerRecord !== null &&
                 customerRecord.customerId && customerRecord.customerName &&
                 customerRecord.creditLimit;

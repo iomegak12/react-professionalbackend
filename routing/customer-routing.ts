@@ -121,7 +121,7 @@ class CustomerRouting implements IRouting {
         this.router.post("/", async (request, response) => {
             const body = request.body;
             const customerRecord: Customer = new Customer(
-                body.customerId, body.customerName, body.add,
+                body.customerId, body.customerName, body.address,
                 body.email, body.phoneNumber, body.customerType,
                 body.creditLimit, body.activeStatus, body.remarks);
 
